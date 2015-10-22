@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="463.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="odianamefolder.MainPageController">
+   <children>
+      <Pane fx:id="section5" layoutX="15.0" layoutY="304.0" prefHeight="50.0" prefWidth="722.0">
+         <children>
+            <Button fx:id="btn37" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn37" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn37" />
+            <Button fx:id="btn38" layoutX="41.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn38" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn38" />
+            <Button fx:id="btn39" layoutX="81.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn39" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn39" />
+            <Button fx:id="btn40" layoutX="121.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn40" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn40" />
+            <Button fx:id="btn41" layoutX="161.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn41" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn41" />
+            <Button fx:id="btn42" layoutX="201.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn42" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn42" />
+            <Button fx:id="btn43" layoutX="241.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn43" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn43" />
+            <Button fx:id="btn44" layoutX="281.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn44" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn44" />
+            <Button fx:id="btn45" layoutX="321.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn45" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn45" />
+            <Button fx:id="btn46" layoutX="361.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn46" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn46" />
+            <Button fx:id="btn47" layoutX="401.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn47" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn47" />
+            <Button fx:id="btn48" layoutX="441.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn48" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn48" />
+            <Button fx:id="btn49" layoutX="481.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn49" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn49" />
+            <Button fx:id="btn50" layoutX="521.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn50" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn50" />
+            <Button fx:id="btn51" layoutX="561.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn51" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn51" />
+            <Button fx:id="btn52" layoutX="601.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn52" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn52" />
+            <Button fx:id="btn53" layoutX="641.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn53" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn53" />
+            <Button fx:id="btn54" layoutX="681.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn54" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn54" />
+         </children></Pane>
+      <Pane fx:id="section6" layoutX="155.0" layoutY="354.0" prefHeight="50.0" prefWidth="442.0">
+         <children>
+            <Button fx:id="btn55" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn55" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn55" />
+            <Button fx:id="btn56" layoutX="41.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn56" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn56" />
+            <Button fx:id="btn57" layoutX="81.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn57" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn57" />
+            <Button fx:id="btn58" layoutX="121.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn58" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn58" />
+            <Button fx:id="btn59" layoutX="161.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn59" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn59" />
+            <Button fx:id="btn60" layoutX="201.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn60" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn60" />
+            <Button fx:id="btn61" layoutX="241.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn61" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn61" />
+            <Button fx:id="btn62" layoutX="281.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn62" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn62" />
+            <Button fx:id="btn63" layoutX="321.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn63" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn63" />
+            <Button fx:id="btn64" layoutX="361.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn64" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn64" />
+            <Button fx:id="btn65" layoutX="401.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn65" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn65" />
+         </children></Pane>
+      <Pane fx:id="section4" layoutX="15.0" layoutY="214.0" prefHeight="90.0" prefWidth="722.0">
+         <children>
+            <Button fx:id="btn36" layoutX="681.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn36" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn36" />
+            <Button fx:id="btn35" layoutX="641.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn35" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn35" />
+            <Button fx:id="btn34" layoutX="601.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn34" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn34" />
+            <Button fx:id="btn33" layoutX="561.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn33" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn33" />
+            <Button fx:id="btn32" layoutX="521.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn32" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn32" />
+            <Button fx:id="btn31" layoutX="481.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn31" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn31" />
+            <Button fx:id="btn30" layoutX="441.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn30" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn30" />
+            <Button fx:id="btn29" layoutX="401.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn29" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn29" />
+            <Button fx:id="btn28" layoutX="361.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn28" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn28" />
+            <Button fx:id="btn27" layoutX="321.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn27" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn27" />
+            <Button fx:id="btn26" layoutX="281.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn26" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn26" />
+            <Button fx:id="btn25" layoutX="241.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn25" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn25" />
+            <Button fx:id="btn24" layoutX="201.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn24" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn24" />
+            <Button fx:id="btn23" layoutX="161.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn23" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn23" />
+            <Button fx:id="btn22" layoutX="121.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn22" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn22" />
+            <Button fx:id="btn21" layoutX="81.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn21" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn21" />
+            <Button fx:id="btn20" layoutX="41.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn20" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn20" />
+            <Button fx:id="btn19" layoutX="1.0" layoutY="41.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn19" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn19" />
+            <Button fx:id="btn18" layoutX="681.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn18" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn18" />
+            <Button fx:id="btn17" layoutX="641.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn17" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn17" />
+            <Button fx:id="btn16" layoutX="601.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn16" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn16" />
+            <Button fx:id="btn15" layoutX="561.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn15" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn15" />
+            <Button fx:id="btn14" layoutX="521.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn14" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn14" />
+            <Button fx:id="btn13" layoutX="481.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn13" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn13" />
+            <Button fx:id="btn12" layoutX="441.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn12" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn12" />
+            <Button fx:id="btn11" layoutX="401.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn11" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn11" />
+            <Button fx:id="btn10" layoutX="361.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn10" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn10" />
+            <Button fx:id="btn9" layoutX="321.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn9" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn9" />
+            <Button fx:id="btn8" layoutX="281.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn8" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn8" />
+            <Button fx:id="btn7" layoutX="241.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn7" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn7" />
+            <Button fx:id="btn6" layoutX="201.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn6" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn6" />
+            <Button fx:id="btn5" layoutX="161.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn5" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn5" />
+            <Button fx:id="btn4" layoutX="121.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn4" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn4" />
+            <Button fx:id="btn3" layoutX="81.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn3" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn3" />
+            <Button fx:id="btn2" layoutX="41.0" layoutY="1.0" maxHeight="40.0" mnemonicParsing="false" onAction="#writebtn2" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn2" />
+            <Button fx:id="btn1" layoutX="1.0" layoutY="1.0" maxHeight="50.0" mnemonicParsing="false" onAction="#writebtn1" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn1" />
+         </children></Pane>
+      <Pane fx:id="section3" layoutX="95.0" layoutY="164.0" prefHeight="50.0" prefWidth="562.0">
+         <children>            
+            <Button fx:id="btn66" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn66" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn66" />
+               
+            <Button fx:id="btn67" layoutX="41.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn67" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn67" />
+              
+            <Button fx:id="btn68" layoutX="81.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn68" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn68" />
+            <Button fx:id="btn69" layoutX="121.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn69" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn69" />
+            <Button fx:id="btn70" layoutX="161.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn70" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn70" />
+            <Button fx:id="btn71" layoutX="201.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn71" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn71" />
+            <Button fx:id="btn72" layoutX="241.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn72" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn72" />
+            <Button fx:id="btn73" layoutX="281.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn73" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn73" />
+            <Button fx:id="btn74" layoutX="321.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn74" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn74" />
+            <Button fx:id="btn75" layoutX="361.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn75" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn75" />
+            <Button fx:id="btn76" layoutX="401.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn76" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn76" />
+            <Button fx:id="btn77" layoutX="441.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn77" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn77" />
+            <Button fx:id="btn78" layoutX="481.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn78" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn78" />
+            <Button fx:id="btn79" layoutX="521.0" layoutY="1.0" mnemonicParsing="false" onAction="#writebtn79" prefHeight="40.0" prefWidth="40.0" style="-fx-background-radius: 0;" text="btn79" />
+         </children></Pane>
+      <Pane fx:id="section1" layoutX="15.0" layoutY="20.0" prefHeight="141.0" prefWidth="500.0">
+         <children>
+            <Label layoutX="13.0" layoutY="4.0" text="Folder path:" />
+            <TextField fx:id="pathfield" layoutX="11.0" layoutY="27.0" prefHeight="25.0" prefWidth="327.0" style="-fx-background-radius: 0;" />
+            <Button fx:id="browse" layoutX="355.0" layoutY="27.0" maxHeight="25.0" maxWidth="80.0" mnemonicParsing="false" onAction="#Browse" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 0;" text="Browse" />
+            <Label layoutX="14.0" layoutY="64.0" text="Folder name:" />
+            <TextField fx:id="namefield" layoutX="14.0" layoutY="85.0" prefHeight="31.0" prefWidth="472.0" style="-fx-background-radius: 0;" />
+         </children>
+      </Pane>
+      <Hyperlink layoutX="6.0" layoutY="438.0" text="www.alokpanda.com" textFill="#868484" />
+      <Pane layoutX="195.0" layoutY="404.0" prefHeight="50.0" prefWidth="362.0">
+         <children>
+            <Button fx:id="spaceBtn" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onAction="#space" prefHeight="40.0" prefWidth="180.0" style="-fx-background-radius: 0;" text="Space" />
+            <Button fx:id="backspace" layoutX="181.0" layoutY="1.0" mnemonicParsing="false" onAction="#backSpace" prefHeight="40.0" prefWidth="180.0" style="-fx-background-radius: 0;" text="Backspace" />
+         </children>
+      </Pane>
+      <Button fx:id="create" layoutX="581.0" layoutY="34.0" maxHeight="100.0" mnemonicParsing="false" onAction="#createFolder" prefHeight="100.0" prefWidth="100.0" style="-fx-background-radius: 0;" text="Create" />
+   </children>
+</AnchorPane>
