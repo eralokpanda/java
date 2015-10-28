@@ -1,0 +1,100 @@
+import java.awt.BorderLayout;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+public class SwingFileChooserDemo extends JPanel implements ActionListener {
+  static private final String newline = "\n";
+
+  JButton openButton;
+
+  JTextArea log;
+
+  JFileChooser fc;
+
+  public SwingFileChooserDemo() {
+    super(new BorderLayout());
+
+;
+
+    //Create a file chooser
+    fc = new JFileChooser();
+
+    openButton = new JButton("Open a File...");
+    openButton.addActionListener(this);
+
+   
+
+
+
+
+
+
+    JPanel buttonPanel = new JPanel(); //use FlowLayout
+    buttonPanel.add(openButton);
+
+
+  
+   
+  }
+
+  public void actionPerformed(ActionEvent e) {
+
+    //Handle open button action.
+    if (e.getSource() == openButton) {
+      int returnVal = fc.showOpenDialog(SwingFileChooserDemo.this);
+
+       
+ 
+
+    }
+  }
+
+
+
+
+
+  private static void createAndShowGUI() {
+    //Make sure we have nice window decorations.
+ 
+
+    //Create and set up the window.
+    JFrame frame = new JFrame("SwingFileChooserDemo");
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+    //Create and set up the content pane.
+    JComponent newContentPane = new SwingFileChooserDemo();
+    newContentPane.setOpaque(true); //content panes must be opaque
+    frame.setContentPane(newContentPane);
+
+    //Display the window.
+    frame.pack();
+    frame.setVisible(true);
+  }
+
+  public static void main(String[] args) {
+    //Schedule a job for the event-dispatching thread:
+    //creating and showing this application's GUI.
+   
+        createAndShowGUI();
+    
+  }
+}
+
+           
+         
+    
+    
+    
+    

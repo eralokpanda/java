@@ -1,0 +1,31 @@
+import net.jimmc.jshortcut.JShellLink;
+
+String PRJT_PATH="";
+private void getdir() throws IOException{
+    File f=new File(".");
+    File[] f1=f.listFiles();
+    PRJT_PATH=f.getCanonicalPath();
+}    //you can call this function at windowOpened event,this will get path of current directory where your project located.
+
+JShellLink link;
+String filePath;
+
+public void createDesktopShortcut() { //after that call createDesktopShortcut() function to create shortcut to desktop.
+    try {
+        link = new JShellLink();
+        filePath = JShellLink.getDirectory("") + PRJT_PTH +"\\JMM.jar";
+    } catch (Exception e) {
+
+    }
+
+    try {
+        link.setFolder(JShellLink.getDirectory("desktop"));
+        link.setName("JMM");  //Choose a name for your shortcut.In my case its JMM.
+        link.setPath(filePath); //link for our executable jar file
+        link.setIconLocation(PRJT_PATH1+ "\\jmm.ico"); //set icon image(before that choose your on manual icon file inside our project folder.[jmm.ico in my case])
+        link.save();
+    } catch (Exception ex) {
+       ex.getmessage();
+    }
+
+}

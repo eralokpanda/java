@@ -1,0 +1,76 @@
+import java.io.*;
+import java.net.*;
+import java.util.*;
+class BputResultSearch 
+{
+	static int count = 1;
+		static int regdNo1;
+		static int regdNo2;
+		static Boolean found;
+		static URL page;
+		static BufferedReader in;
+		static Boolean flag;
+		static String inputLine;
+		static String name;
+		static String code;
+		static Scanner sc;
+	
+	public static void main(String[] args) throws Exception
+	{ 
+		System.out.print("Enter the URL code (524_RES): ");
+		sc = new Scanner(System.in);
+		code = sc.next().toUpperCase();
+		
+		System.out.print("Enter start Registeration no(1101219110): ");
+		sc = new Scanner(System.in);
+		regdNo1 = sc.nextInt();
+		System.out.print("Enter end Registeration no(1101219199): ");
+		sc = new Scanner(System.in);
+		regdNo2 = sc.nextInt();
+		System.out.print("Enter the name: ");
+		sc = new Scanner(System.in);
+		name = sc.nextLine();
+		System.out.println();
+
+		a:for(;regdNo1<=regdNo2;regdNo1++,count++)
+		{
+		flag = false;
+
+		try{	
+		 page = new URL("http://results.bput.ac.in/"+code+"/"+regdNo1+".html");
+		
+System.out.print(".");
+		
+		in = new BufferedReader(new InputStreamReader(page.openStream()));
+		}
+		 catch(Exception e)
+			{
+			flag = true;
+			}
+
+			if(flag)
+			{
+				continue a;
+			}
+        while ((inputLine = in.readLine()) != null)
+		{ 
+found = inputLine.contains(name.toUpperCase());
+			if(found)
+			{
+				System.out.println();
+				System.out.println(regdNo1);
+			break a;
+			}
+		}
+       in.close(); 
+		
+		}
+		if(found == false)
+		System.out.println("No match found!!");
+
+					
+	
+
+	}
+	
+}

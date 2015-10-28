@@ -1,0 +1,29 @@
+import java.net.*;
+import java.io.*;
+class Server 
+{
+	public static DatagramSocket ds;
+	public static int cport = 8888,sport = 9999;
+	public static void main(String[] args) throws Exception
+	{
+		byte buf[] = new byte[2500];
+		ds = new DatagramSocket(sport);
+		BufferedReader bs = new BufferedReader(new InputStreamReader(System.in));
+		InetAddress ia = InetAddress.getByName("localhost");
+		System.out.print("Enter the msg");
+		String s;
+		while(true)
+		{
+		s = bs.readLine();
+			buf = s.getBytes();
+			ds.send(new DatagramPacket(buf,buf.length,ia,cport));
+		if((s==null)||s.equalsIgnoreCase("end"))
+			{
+			break;
+			}
+		}
+		
+
+
+	}
+}

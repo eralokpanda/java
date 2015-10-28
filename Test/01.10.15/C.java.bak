@@ -1,0 +1,8 @@
+public class C implements Cloneable 
+{
+	int a;
+	C Clo() throws Exception
+	{
+		return (C)super.clone();
+	}
+}

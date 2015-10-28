@@ -1,0 +1,21 @@
+import java.io.*;
+class X implements Serializable
+{
+	String s = "hello";
+	int i = 55;
+	void m()
+	{
+		System.out.println(s+" : "+i);
+	}
+}
+
+class ObFile 
+{
+	public static void main(String[] args) throws IOException
+	{
+		X x1 = new X();
+		FileOutputStream fis = new FileOutputStream("file.ob");
+		ObjectOutputStream oos = new ObjectOutputStream(fis);
+		oos.writeObject(x1);
+	}
+}
