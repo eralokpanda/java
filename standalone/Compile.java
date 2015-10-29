@@ -48,9 +48,9 @@ class Compile {
 	static void Compile (String fName) throws Exception {
 		
 		boolean pkgFlag = false;
-		String path = "classes/";
+		String path = "WEB-INF/classes/";
 				
-		proc = Runtime.getRuntime ().exec ("javac src/"+fName);
+		proc = Runtime.getRuntime ().exec ("javac WEB-INF/src/"+fName);
 		int i = proc.waitFor ();
 		br = new BufferedReader (new InputStreamReader (proc.getErrorStream ()));
 		line = "";
@@ -58,7 +58,7 @@ class Compile {
 			System.err.println (line);
 		}
 		
-		br = new BufferedReader( new FileReader("src/"+fName));
+		br = new BufferedReader( new FileReader("WEB-INF/src/"+fName));
 		line = br.readLine();  //java file read to know the package
 		
 		if (line != null) { //check file contain data or not
@@ -82,8 +82,8 @@ class Compile {
 				pkgClassArray.add(fName.replace(".java", ""));//if	
 			}
 			String cfile = fName.replace(".java", ".class");
-			if(new File("src/"+cfile).exists()) {
-				move("src/"+cfile, path+cfile); //move the class file "src" directory to "classes" directory
+			if(new File("WEB-INF/src/"+cfile).exists()) {
+				move("WEB-INF/src/"+cfile, path+cfile); //move the class file "src" directory to "classes" directory
 			}				
 		}
 	}
@@ -92,7 +92,7 @@ class Compile {
 		
 		String className;
 		
-		BufferedWriter webXmlFile = new BufferedWriter (new FileWriter ("web.xml")); 
+		BufferedWriter webXmlFile = new BufferedWriter (new FileWriter ("WEB-INF/web.xml")); 
 		webXmlFile.write ("<?xml version=\"1.0\" encoding=\"UTF-8\" ?> \n\n\n");	
 		webXmlFile.append("<web-app>\n\n");
 		
@@ -121,8 +121,19 @@ class Compile {
 	public static void main (String[] args) throws Exception {	
 		
 		String[] list;		
+			f = new File ("WEB-INF");		
+		if ((!f.exists ()) | (!f.isDirectory ())) {
+			System.err.println("WEB-INF Directory does not exist !!");
+			boolean flag =f.mkdir ();
+			if(flag) {
+				System.out.println("WEB-INF Directory successfully created.");
+			}			
+		}	
+		if (!f.canWrite ()) {
+			System.err.println("\"WEB-INF\" Directory write permission denied !!");
+		}
 		
-		f = new File ("classes");		
+		f = new File ("WEB-INF/classes");		
 		if ((!f.exists ()) | (!f.isDirectory ())) {
 			System.err.println("classes Directory does not exist !!");
 			boolean flag =f.mkdir ();
@@ -134,7 +145,7 @@ class Compile {
 			System.err.println("\"classes\" Directory write permission denied !!");
 		}
 		
-		f = new File ("src");		
+		f = new File ("WEB-INF/src");		
 		if ((!f.exists ()) | (!f.isDirectory ())) {
 			System.err.println("src Directory does not exist !!");
 			flag =f.mkdir ();
@@ -167,7 +178,7 @@ class Compile {
 			}
 		}	
 
-		f = new File ("web.xml");		
+		f = new File ("WEB-INF/web.xml");		
 		if ((!f.exists ()) | (!f.isFile ())) {
 			System.err.println("web.xml file does not exist !!");
 			createWebXmlFile();
