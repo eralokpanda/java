@@ -1,11 +1,20 @@
+
+/*
+This is a simple java program. which is use to simplify the compilation process and 
+file move from source directory to classes directory in web based application.  
+*/
+
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FilenameFilter;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.InputStreamReader;
 
 import java.util.ArrayList;
@@ -19,7 +28,7 @@ class Compile {
 	static String line;	
 	static File f;
 	static Process proc;
-	static ArrayList<String> pkgNameArray;
+	static ArrayList<String> pkgClassArray;
 
 	static void move (String source, String target) throws Exception {
 		int i;
@@ -32,7 +41,7 @@ class Compile {
 		f = new File (source);
 		flag = f.delete (); //delete class file from src directory
 		if (flag) {
-			System.out.println ("Success");
+			System.out.println (target+": Success");
 		}
 	}	
 	
@@ -58,7 +67,7 @@ class Compile {
 				i = line.indexOf (';');
 				if (i != (int)-1) {		//To check whether the package statement completed in first line or not	
 					line = line.substring (8,i).trim ();
-					pkgNameArray.add(line+"."+fName.replace(".java", ""));	
+					pkgClassArray.add(line+"."+fName.replace(".java", ""));	
 					String arr[] = line.split ("\\."); // divide the entire package name into array
 			
 						
@@ -68,22 +77,45 @@ class Compile {
 						path = path+b+"/";	
 					}
 				}
-			
-				String cfile = fName.replace(".java", ".class");
-				if(new File("src/"+cfile).exists()) {
-					move("src/"+cfile, path+cfile); //move the class file "src" directory to "classes" directory
-				}		
-			}	
+			}
+			if (!pkgFlag) {
+				pkgClassArray.add(fName.replace(".java", ""));//if	
+			}
+			String cfile = fName.replace(".java", ".class");
+			if(new File("src/"+cfile).exists()) {
+				move("src/"+cfile, path+cfile); //move the class file "src" directory to "classes" directory
+			}				
 		}
 	}
 
-	public void createWebXmlFile () {
+	static void createWebXmlFile () throws Exception {
 		
-		Object[] ar = pkgNameArray.toArray();
-		for(Object o: ar)
-		System.out.println(o.toString());
+		String className;
 		
+		BufferedWriter webXmlFile = new BufferedWriter (new FileWriter ("web.xml")); 
+		webXmlFile.write ("<?xml version=\"1.0\" encoding=\"UTF-8\" ?> \n\n\n");	
+		webXmlFile.append("<web-app>\n\n");
 		
+		for(Object o : pkgClassArray.toArray()) {
+			className = o.toString().substring ((o.toString().lastIndexOf("."))+1); //get class name to use in servlet name
+			webXmlFile.append("\t<servlet>\n");
+			webXmlFile.append("\t\t<servlet-name>"+className+"</servlet-name>\n");
+			webXmlFile.append("\t\t<servlet-class>"+o.toString()+"</servlet-class>\n");
+			webXmlFile.append("\t</servlet>\n\n");		
+			webXmlFile.append("\t<servlet-mapping>\n");
+			webXmlFile.append("\t\t<servlet-name>"+className+"</servlet-name>\n");
+			webXmlFile.append("\t\t<url-pattern>"+""+"</url-pattern>\n");
+			webXmlFile.append("\t</servlet-mapping>\n\n");
+		}
+		webXmlFile.append("\t<welcome-file-list>\n");
+		webXmlFile.append("\t\t<welcome-file>index.html</welcome-file>\n");
+		webXmlFile.append("\t\t<welcome-file>index.jsp</welcome-file>\n");
+		webXmlFile.append("\t\t<welcome-file></welcome-file>\n");
+		webXmlFile.append("\t</welcome-file-list>\n\n");
+		
+		webXmlFile.append("</web-app>\n");
+		webXmlFile.close();
+		System.out.println("web.xml successfully created");
 	}
 	
 	public static void main (String[] args) throws Exception {	
@@ -115,7 +147,7 @@ class Compile {
 			System.err.println("\"src\" Directory permission denied !!");
 		}
 		
-		FilenameFilter javaFilter = new FilenameFilter () {
+		/*FilenameFilter javaFilter = new FilenameFilter () {
 			public boolean accept (File dir, String name) {				
 				if (name.endsWith (".java")) {
 					return true;
@@ -123,11 +155,16 @@ class Compile {
 					return false;
 				}
 			}
-		};
-		pkgNameArray = new ArrayList<String>();
-		list = f.list (javaFilter);	   	
+		};*/
+		
+		pkgClassArray = new ArrayList<String>();
+		//list = f.list (javaFilter);	
+		list = f.list ();
 		for (String s : list) {
-			Compile (s);		//calling compiler to compile java file one by one	
+			if (s.endsWith (".java")) {
+				System.out.println(s);
+				Compile (s);		//calling compiler to compile java file one by one	
+			}
 		}	
 
 		f = new File ("web.xml");		
